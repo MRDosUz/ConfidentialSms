@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".app.LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_guid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="26dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_guid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="26dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guid_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20" />
+
+    <TextView
+        android:id="@+id/login_title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Itlimos parolni kiriting"
+        android:textStyle="bold"
+        android:textColor="@color/login_title_text_color"
+        app:layout_constraintEnd_toEndOf="@id/end_guid"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@id/start_guid"
+        app:layout_constraintTop_toTopOf="@id/guid_top" />
+
+    <TextView
+        android:id="@+id/login_title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ilovaga kirish uchun parolni kiritish shart"
+        android:textStyle="bold"
+        android:textColor="@color/login_title_text_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/end_guid"
+        app:layout_constraintStart_toStartOf="@id/start_guid"
+        app:layout_constraintTop_toBottomOf="@id/login_title_1" />
+
+    <LinearLayout
+        android:id="@+id/password_group"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@id/end_guid"
+        app:layout_constraintStart_toEndOf="@id/start_guid"
+        app:layout_constraintTop_toBottomOf="@id/login_title_2">
+
+        <LinearLayout
+            android:id="@+id/password_wrap_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/password_letter_1"
+                style="@style/password_text_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password_wrap_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/password_letter_2"
+                style="@style/password_text_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password_wrap_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/password_letter_3"
+                style="@style/password_text_style" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password_wrap_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/password_letter_4"
+                style="@style/password_text_style" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/keyboard_group"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/end_guid"
+        app:layout_constraintStart_toStartOf="@id/start_guid"
+        app:layout_constraintTop_toBottomOf="@id/password_group">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/keyboard_button_1"
+                style="@style/password_keyboard_style"
+                android:tag="1"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/keyboard_button_2"
+                style="@style/password_keyboard_style"
+                android:tag="2"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/keyboard_button_3"
+                style="@style/password_keyboard_style"
+                android:tag="3"
+                android:text="3" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/keyboard_button_4"
+                style="@style/password_keyboard_style"
+                android:tag="4"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/keyboard_button_5"
+                style="@style/password_keyboard_style"
+                android:tag="5"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/keyboard_button_6"
+                style="@style/password_keyboard_style"
+                android:tag="6"
+                android:text="6" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/keyboard_button_7"
+                style="@style/password_keyboard_style"
+                android:tag="7"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/keyboard_button_8"
+                style="@style/password_keyboard_style"
+                android:tag="8"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/keyboard_button_9"
+                style="@style/password_keyboard_style"
+                android:tag="9"
+                android:text="9" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/keyboard_button_clear"
+                style="@style/password_keyboard_style"
+                android:text="clear"
+                android:textSize="20sp"
+                android:tag="clear"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/keyboard_button_0"
+                style="@style/password_keyboard_style"
+                android:tag="0"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/keyboard_button_delete"
+                style="@style/password_keyboard_style"
+                android:text="delete"
+                android:textSize="20sp"
+                android:tag="delete"
+                android:textStyle="normal" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!--    <GridLayout-->
+    <!--        android:id="@+id/variant_group"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:columnCount="3"-->
+    <!--        android:gravity="center"-->
+    <!--        android:paddingTop="15dp"-->
+    <!--        android:rowCount="4"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/start_guid"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/end_guid"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/password_group">-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_1"-->
+    <!--            -->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="1" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_2"-->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="2" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_3"-->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="3" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_4"-->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="4" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_5"-->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="5" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_6"-->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="6" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_7"-->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="7" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_8"-->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="8" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_9"-->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="9" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_10"-->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="*" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_11"-->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="0" />-->
+
+
+    <!--        <TextView-->
+    <!--            android:id="@+id/variant_12"-->
+    <!--            style="@style/variant_text_style"-->
+    <!--            android:hint="-" />-->
+
+
+    <!--    </GridLayout>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

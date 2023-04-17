@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="gradient_start_1">#FA222E46</color>
+    <color name="gradient_end_1">#40516D</color>
+    <color name="gradient_start_2">#FFFFFF</color>
+    <color name="gradient_end_2">#FFFFFF</color>
+    <color name="login_title_text_color">#CFCACA</color>
+    <color name="login_title_text_color_wrong">#DF0707</color>
+    <color name="password_text_color">#FA425885</color>
+    <color name="password_shape_color">#F0E4E4</color>
+    <color name="password_keyboard_style">#CFCACA</color>
+
+</resources>
