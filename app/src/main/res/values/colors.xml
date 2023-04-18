@@ -17,7 +17,17 @@
     <color name="login_title_text_color">#CFCACA</color>
     <color name="login_title_text_color_wrong">#DF0707</color>
     <color name="password_text_color">#FA425885</color>
-    <color name="password_shape_color">#F0E4E4</color>
+<!--    <color name="password_shape_color">#F0E4E4</color>-->
+    <color name="password_shape_color">#CFCACA</color>
     <color name="password_keyboard_style">#CFCACA</color>
+    <color name="test">#51459D</color>
+    <color name="test1">#3700B2</color>
+    <color name="navbar_color_start">#51459D</color>
+    <color name="navbar_color_end">#6359A1</color>
+    <color name="navbar_back_btn_color">#FEFEFE</color>
+    <color name="navbar_phone_number_color">#FEFEFE</color>
+    <color name="messages_back_color">#F5FAFE</color>
+    <color name="messages_item_back_color">#FEFEFE</color>
+    <color name="floating_action_btn_color">#41D2BD</color>
 
 </resources>

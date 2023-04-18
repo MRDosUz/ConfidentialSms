@@ -1,4 +1,4 @@
-package uz.mrdos.confidentialsms.app
+package uz.mrdos.confidentialsms.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,11 +1,10 @@
-package uz.mrdos.confidentialsms.app
+package uz.mrdos.confidentialsms.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.forEach
@@ -13,7 +12,7 @@ import androidx.core.view.get
 import androidx.core.view.isGone
 import androidx.core.view.isVisible
 import uz.mrdos.confidentialsms.R
-import uz.mrdos.confidentialsms.cache.AppCache
+import uz.mrdos.confidentialsms.core.cache.AppCache
 import uz.mrdos.confidentialsms.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -52,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
     private fun checkIsTruePassword() {
         if (password.length == 4) {
             if (AppCache.checkPassword(password)) {
-                val intent = Intent(this, MainActivity::class.java)
+                val intent = Intent(this, MessagesActivity::class.java)
                 startActivity(intent)
                 finish()
             } else {

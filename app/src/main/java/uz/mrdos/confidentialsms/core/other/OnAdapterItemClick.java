@@ -1,0 +1,1 @@
+package uz.mrdos.confidentialsms.core.other;import uz.mrdos.confidentialsms.core.model.SmsMessageDto;public interface OnAdapterItemClick {    void onItemClick(SmsMessageDto message);}

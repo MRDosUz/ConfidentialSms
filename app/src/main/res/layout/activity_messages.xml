@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/messages_back_color"
     tools:context=".ui.BasisActivity">
 
 
@@ -33,42 +34,46 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:background="@color/navbar_color"
+        android:background="@drawable/messages_navbar_background_gradient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/top_guid">
 
-        <ImageButton
-            android:id="@+id/back_btn"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_margin="8dp"
-            android:padding="4dp"
-            android:background="@drawable/back_btn_back"
-            android:src="@drawable/navbar_back_btn_icon"
-            app:layout_constraintBottom_toBottomOf="@id/navbar_group"
-            app:layout_constraintDimensionRatio="1:1"
-            app:layout_constraintStart_toStartOf="@id/navbar_group"
-            app:layout_constraintTop_toTopOf="@id/navbar_group" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:padding="4dp"
-            android:fadingEdgeLength="5dp"
-            android:textSize="18sp"
+            android:layout_marginStart="26dp"
+            android:textSize="20sp"
             android:textStyle="bold"
-            android:maxLength="16"
+            android:gravity="center_vertical"
             android:textColor="@color/navbar_phone_number_color"
-            android:text="+99890-919-68-39"
+            android:text="Messages"
             app:layout_constraintBottom_toBottomOf="@id/navbar_group"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/navbar_group"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <ListView
+        android:id="@+id/sms_messages_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="0.3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_guid"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/new_message"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="16dp"-->
+<!--        app:backgroundTint="@color/floating_action_btn_color"-->
+<!--        app:tint="@color/messages_back_color"-->
+<!--        android:src="@android:drawable/ic_input_add"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

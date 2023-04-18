@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/login_background"
-    tools:context=".app.LoginActivity">
+    android:background="@drawable/login_background_gradient"
+    tools:context=".ui.LoginActivity">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/start_guid"
@@ -33,10 +33,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Itlimos parolni kiriting"
-        android:textStyle="bold"
         android:textColor="@color/login_title_text_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/end_guid"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@id/start_guid"
         app:layout_constraintTop_toTopOf="@id/guid_top" />
 
@@ -45,9 +45,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ilovaga kirish uchun parolni kiritish shart"
-        android:textStyle="bold"
         android:textColor="@color/login_title_text_color"
-        android:textSize="12sp"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/end_guid"
         app:layout_constraintStart_toStartOf="@id/start_guid"
         app:layout_constraintTop_toBottomOf="@id/login_title_1" />
@@ -225,9 +225,9 @@
             <TextView
                 android:id="@+id/keyboard_button_clear"
                 style="@style/password_keyboard_style"
+                android:tag="clear"
                 android:text="clear"
                 android:textSize="20sp"
-                android:tag="clear"
                 android:textStyle="normal" />
 
             <TextView
@@ -239,9 +239,9 @@
             <TextView
                 android:id="@+id/keyboard_button_delete"
                 style="@style/password_keyboard_style"
+                android:tag="delete"
                 android:text="delete"
                 android:textSize="20sp"
-                android:tag="delete"
                 android:textStyle="normal" />
 
 
