@@ -1,6 +1,7 @@
 package uz.mrdos.confidentialsms.core.adapter
 
 import android.view.LayoutInflater
+import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
@@ -16,11 +17,12 @@ class MessagesAdapter : BaseAdapter() {
 
     private lateinit var onAdapterItemClick: OnAdapterItemClick
 
-    var smsMessageList = ArrayList<SmsMessageDto>()
-        set(value) {
-            field.addAll(value)
-            notifyDataSetChanged()
-        }
+    private var smsMessageList = ArrayList<SmsMessageDto>()
+    fun setData(data: ArrayList<SmsMessageDto>) {
+        this.smsMessageList.clear()
+        this.smsMessageList.addAll(data)
+        notifyDataSetChanged()
+    }
 
     fun setOnAdapterItemClick(onAdapterItemClick: OnAdapterItemClick) {
         this.onAdapterItemClick = onAdapterItemClick
@@ -40,7 +42,6 @@ class MessagesAdapter : BaseAdapter() {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val view: View =
             LayoutInflater.from(parent.context).inflate(R.layout.sms_messages_item, parent, false)
-
 
         val data: SmsMessageDto = getItem(position)
 
@@ -63,4 +64,5 @@ class MessagesAdapter : BaseAdapter() {
         }
         return view
     }
+
 }
